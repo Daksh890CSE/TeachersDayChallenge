@@ -5,8 +5,7 @@ class Solution {
         int count=0;
         for(int i=0;i<nums.length;i++){
             String str=Integer.toString(nums[i]);
-            int len=str.length();
-            if(len%2==0){
+            if(str.length()%2==0){
                 count++;
             }
         }
@@ -25,7 +24,6 @@ public class App {
             nums[i]=kb.nextInt();
         }
         Solution obj=new Solution();
-        int result=obj.findNumbers(nums);
-        System.out.println(result);
+        System.out.println(obj.findNumbers(nums));
     }
 }
