@@ -6,8 +6,11 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             String str=Integer.toString(nums[i]);
             int len=str.length();
-            
+            if(len%2==0){
+                count++;
+            }
         }
+        return count;
     }
 }
 
