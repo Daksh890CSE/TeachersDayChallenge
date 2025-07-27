@@ -5,8 +5,12 @@ class Solution {
         String regex="[^A-Za-z]";
         s=s.replaceAll(regex,"");
         s=s.toLowerCase();
-        for(int i=0;s.length())
-        return true;
+        String revstr=new StringBuffer(s).reverse().toString();
+        if(s.equalsIgnoreCase(revstr)){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
 
@@ -17,5 +21,6 @@ public class App {
         String s=kb.nextLine();
         Solution obj = new Solution();
         boolean check=obj.isPalindrome(s);
+        System.out.println(check);
     }
 }
