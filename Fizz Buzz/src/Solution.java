@@ -6,13 +6,13 @@ class Solution {
        int i=1;
        while (i<=n) {
         if(i%3==0&&i%5==0){
-          result.add("\"FizzBuzz\"");
+          result.add("FizzBuzz");
         }else if(i%3==0){
-          result.add("\"Fizz\"");
+          result.add("Fizz");
         }else if(i%5==0){
-          result.add("\"Buzz\"");
+          result.add("Buzz");
         }else{
-          result.add(String.valueOf("\""+i+"\""));
+          result.add(String.valueOf(i));
         }
         i++;
        }
