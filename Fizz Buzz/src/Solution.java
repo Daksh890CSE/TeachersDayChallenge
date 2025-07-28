@@ -20,7 +20,7 @@ class Solution {
     }
       public static void main(String[] args){
          Scanner kb=new Scanner(System.in);
-         System.out.println("Enter the integer");
+         System.out.println("Enter a number: ");
          int n=kb.nextInt();
          Solution obj=new Solution();
          System.out.println(obj.fizzBuzz(n));
