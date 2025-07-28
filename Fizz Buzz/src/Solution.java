@@ -10,16 +10,20 @@ class Solution {
         }else if(i%3==0){
           result.add("Fizz");
         }else if(i%5==0){
-          result.add("Fizz");
+          result.add("Buzz");
+        }else{
+          result.add("i");
         }
+        i++;
        }
+       return result;
     }
       public static void main(String[] args){
          Scanner kb=new Scanner(System.in);
          System.out.println("Enter the integer");
          int n=kb.nextInt();
          Solution obj=new Solution();
-         obj.fizzBuzz(n);
+         System.out.println(obj.fizzBuzz(n));
          kb.close();
     }
 }
