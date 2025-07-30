@@ -9,9 +9,12 @@ class Solution {
         int sell_day = len - 1;
         for (int i = 1; i < len; i++) {
             if (prices[i - 1] < prices[i]) {
-                if (purchase >= prices[i - 1]) {
+                if (purchase > prices[i - 1]) {
                     purchase = prices[i - 1];
                     purchase_day = i + 1;
+                }else if(purchase == prices[i - 1]){
+                    purchase = prices[i - 1];
+                    purchase_day = i ;
                 }
             } else if (purchase == prices[0]) {
                 if (prices[i - 1] > prices[i]) {
@@ -22,7 +25,7 @@ class Solution {
             }
         }
         if (purchase_day < len) {
-            for (int j = purchase_day; j < len; j++) {
+            for (int j = purchase_day; j <len; j++) {
                 if (sell < prices[j]) {
                     sell = prices[j];
                     sell_day = j + 1;
