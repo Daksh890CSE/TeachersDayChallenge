@@ -2,9 +2,18 @@ import java.util.*;
 
 class Solution {
     public int maxProfit(int[] prices) {
-        for(int i=0;i>=prices.length-1;i--){
-            if(){
-
+        int len=prices.length;
+        int purchase=prices[0];
+        int sell=prices[len];
+        for(int i=1;i<len;i++){
+            if(prices[i-1]<prices[i]){
+                if(purchase>=prices[i-1]){
+                    purchase=prices[i-1];
+                }else{
+                    
+                }
+            }else{
+                if(sell<prices[i])
             }
         }
     }
