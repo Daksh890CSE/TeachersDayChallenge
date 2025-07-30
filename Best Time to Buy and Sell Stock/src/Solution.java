@@ -5,17 +5,26 @@ class Solution {
         int len=prices.length;
         int purchase=prices[0];
         int sell=prices[len];
+        int day=len;
         for(int i=1;i<len;i++){
             if(prices[i-1]<prices[i]){
-                if(purchase>=prices[i-1]){
-                    purchase=prices[i-1];
+                if(purchase<=prices[i-1]){
+                    purchase=prices[0];
                 }else{
-                    
+                    purchase=prices[i-1];
                 }
             }else{
-                if(sell<prices[i])
+                if(sell<prices[i-1]){
+                    sell=prices[i-1];
+                    day=i-1;
+                }else{
+                    sell=prices[len];
+                }
+            }if(sell==purchase){
+                return day=0;
             }
         }
+        return day;
     }
     public static void main(String args[]){
         Scanner kb=new Scanner(System.in);
@@ -26,5 +35,7 @@ class Solution {
         for(int i=0;i<n;i++){
             prices[i]=kb.nextInt();
         }
+        Solution obj=new Solution();
+        System.out.println(obj.maxProfit(prices));
     }
 }
