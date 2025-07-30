@@ -18,6 +18,7 @@ class Solution {
                 char nxtchar = s.charAt(i + 1);
                 if (ht.get(character) < ht.get(nxtchar)) {
                     int val = ht.get(nxtchar) - ht.get(character);
+                    i++;
                     total += val;
                 } else {
                     int val = ht.get(character);
