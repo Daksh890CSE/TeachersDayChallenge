@@ -7,34 +7,15 @@ class Solution {
         int sell = prices[len - 1];
         int purchase_day = 1;
         int sell_day = len - 1;
-        for (int i = 1; i < len; i++) {
-            if (prices[i - 1] < prices[i]) {
-                if (purchase > prices[i - 1]) {
-                    purchase = prices[i - 1];
-                    purchase_day = i + 1;
-                }else if(purchase == prices[i - 1]){
-                    purchase = prices[i - 1];
-                    purchase_day = i ;
-                }
-            } else if (purchase == prices[0]) {
-                if (prices[i - 1] > prices[i]) {
-                    purchase_day = len;
-                } else {
-                    purchase_day=1;
-                }
-            }
+        if(len==1){
+            sell_day=0;
+        }else if(len==2 && purchase==sell){
+            sell_day=0;
+        }else if(len==2 && purchase<sell){
+            sell_day=2;
+        }else if(len==2 && purchase>sell){
+            sell_day=0;
         }
-        if (purchase_day < len) {
-            for (int j = purchase_day; j <len; j++) {
-                if (sell < prices[j]) {
-                    sell = prices[j];
-                    sell_day = j + 1;
-                }
-            }
-        } else {
-            sell_day = 0;
-        }
-        return sell_day;
     }
 
     public static void main(String args[]) {
