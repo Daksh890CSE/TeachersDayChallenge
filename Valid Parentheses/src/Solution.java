@@ -9,12 +9,15 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
                 stk.push(s.charAt(i));
-            } else if (stk.peek() == '(' && s.charAt(i) == ')' && (!stk.isEmpty())) {
-                stk.pop();
-            } else if (stk.peek() == '[' && s.charAt(i) == ']' && (!stk.isEmpty())) {
-                stk.pop();
-            } else if (stk.peek() == '{' && s.charAt(i) == '}' && (!stk.isEmpty())) {
-                stk.pop();
+            }
+            if (!stk.isEmpty()) {
+                if (stk.peek() == '(' && s.charAt(i) == ')') {
+                    stk.pop();
+                } else if (stk.peek() == '[' && s.charAt(i) == ']') {
+                    stk.pop();
+                } else if (stk.peek() == '{' && s.charAt(i) == '}') {
+                    stk.pop();
+                }
             }
         }
         return stk.empty();
