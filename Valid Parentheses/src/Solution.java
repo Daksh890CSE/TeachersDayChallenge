@@ -3,12 +3,8 @@ import java.util.*;
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stk = new Stack<>();
-        boolean is_true = true;
-        if (s.charAt(0) == ')' || s.charAt(0) == ']' || s.charAt(0) == '}') {
-            is_true=false;
-        }
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(0) == '(' || s.charAt(0) == '[' || s.charAt(0) == '{') {
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
                 stk.push(s.charAt(i));
             }else if(stk.peek()=='(' &&s.charAt(i)==')'){
                 stk.pop();
@@ -17,10 +13,8 @@ class Solution {
             }else if(stk.peek()=='{' &&s.charAt(i)=='}'){
                 stk.pop();
             }
-        }if(stk.empty()==true){
-            is_true=true;
         }
-        return is_true;
+        return stk.empty();
     }
 
     public static void main(String[] args) {
