@@ -3,8 +3,9 @@ import java.util.*;
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stk = new Stack<>();
+        boolean is_true = true;
         if (s.charAt(0) == ')' || s.charAt(0) == ']' || s.charAt(0) == '}') {
-            return is_true=false;
+            is_true=false;
         }
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(0) == '(' || s.charAt(0) == '[' || s.charAt(0) == '{') {
@@ -17,7 +18,7 @@ class Solution {
                 stk.pop();
             }
         }if(stk.empty()==true){
-            return is_true=true;
+            is_true=true;
         }
         return is_true;
     }
