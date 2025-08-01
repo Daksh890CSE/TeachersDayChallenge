@@ -6,19 +6,23 @@ class Solution {
         if (s.charAt(0) == ')' || s.charAt(0) == ']' || s.charAt(0) == '}') {
             return false;
         }
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
-                stk.push(s.charAt(i));
-            }
-            if (!stk.isEmpty()) {
-                if (stk.peek() == '(' && s.charAt(i) == ')') {
-                    stk.pop();
-                } else if (stk.peek() == '[' && s.charAt(i) == ']') {
-                    stk.pop();
-                } else if (stk.peek() == '{' && s.charAt(i) == '}') {
-                    stk.pop();
+        if (s.length() % 2 == 0) {
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
+                    stk.push(s.charAt(i));
+                }
+                if (!stk.isEmpty()) {
+                    if (stk.peek() == '(' && s.charAt(i) == ')') {
+                        stk.pop();
+                    } else if (stk.peek() == '[' && s.charAt(i) == ']') {
+                        stk.pop();
+                    } else if (stk.peek() == '{' && s.charAt(i) == '}') {
+                        stk.pop();
+                    }
                 }
             }
+        }else{
+            return false;
         }
         return stk.empty();
     }
