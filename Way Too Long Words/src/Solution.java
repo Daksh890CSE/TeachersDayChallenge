@@ -21,6 +21,6 @@ public class Solution {
             String s=kb.next();
             System.out.println(obj.WayTwoLong(s));
         }
-        kb.close();
+        
     }
 }
