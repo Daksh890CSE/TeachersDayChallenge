@@ -19,8 +19,8 @@ public class Solution {
         int n=kb.nextInt();
         for(int i=0;i<n;i++){
             String s=kb.next();
-            System.out.println(obj.WayTwoLong(s));
         }
+        System.out.println(obj.WayTwoLong(s));
         kb.close();
     }
 }
