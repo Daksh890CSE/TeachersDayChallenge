@@ -3,7 +3,7 @@ import java.util.*;
 public class Solution {
     public String WayTwoLong(String s){
         int len=s.length();
-        if(len<9){
+        if(len<11){
             return s;
         }else{
             char start=s.charAt(0);
