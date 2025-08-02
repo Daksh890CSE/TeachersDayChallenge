@@ -3,7 +3,7 @@ import java.util.*;
 public class Solution {
     public String WayTwoLong(String s){
         int len=s.length();
-        if(len<10){
+        if(len<9){
             return s;
         }else{
             char start=s.charAt(0);
@@ -18,9 +18,8 @@ public class Solution {
         Solution obj=new Solution();
         int n=kb.nextInt();
         for(int i=0;i<n;i++){
-            String s=kb.next();
-        }
-        System.out.println(obj.WayTwoLong(s));
+            System.out.println(obj.WayTwoLong(kb.next()));
+        } 
         kb.close();
     }
 }
