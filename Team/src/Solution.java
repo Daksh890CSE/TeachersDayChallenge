@@ -4,18 +4,26 @@ public class Solution {
    public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
         int n=kb.nextInt();
-        int solved =0;
-        for(int i=0;i<n;i++){
+        int solved=0;
+        for(int i=0;i<=n;i++){
+            int count=0;
             String str=kb.nextLine();
             String[] numstr= str.split(" ");
             int[] num= new int[numstr.length]; 
             for(int j=0;j<numstr.length;j++){
-                num[j]=Integer.parseInt(numstr[j]);
-                int count=0;
-                if(count>=2){
+            try{
+               num[j]=Integer.parseInt(numstr[j]);
+            }catch(NumberFormatException e){
+
+            }
+             if(num[j]==1){
+                count+=1;
+                if(count==2){
                     solved+=1;
                 }
+             }
             }
         }
+        System.out.println(solved);
     }
 }
