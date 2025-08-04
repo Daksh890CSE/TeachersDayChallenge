@@ -17,5 +17,4 @@ public class Solution {
         System.out.println(s);
         kb.close();
     }
-
 }
