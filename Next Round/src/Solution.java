@@ -24,8 +24,8 @@ public class Solution {
             }
         }
         for (int i = 0; i < arr.length; i++) {
-            if (arr[k-1] == 0) {
-                break;
+            if (arr[i] == 0) {
+                count+=0;
             } else if (arr[i] == arr[k-1]) {
                 count += 1;
             } else if (arr[i] > arr[k-1]) {
