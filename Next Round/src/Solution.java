@@ -31,7 +31,7 @@ public class Solution {
                 break;
             } else if (arr[i] == arr[k]) {
                 count += 1;
-            } else if (arr[i] > arr[k]) {
+            } else if (arr[i] >= arr[k]) {
                 count += 1;
             }
         }
