@@ -34,5 +34,6 @@ public class Solution {
             
         }
         System.out.println(count);
+        kb.close();
     }
 }
