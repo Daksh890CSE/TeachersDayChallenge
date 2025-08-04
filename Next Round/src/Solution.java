@@ -24,16 +24,14 @@ public class Solution {
             }
         }
         for (int i = 0; i < arr.length; i++) {
-            if (k >= arr.length) {
-                count=k;
+            if (arr[k-1] == 0) {
                 break;
-            } else if (arr[k] == 0) {
-                break;
-            } else if (arr[i] == arr[k]) {
+            } else if (arr[i] == arr[k-1]) {
                 count += 1;
-            } else if (arr[i] >= arr[k]) {
+            } else if (arr[i] > arr[k-1]) {
                 count += 1;
             }
+            
         }
         System.out.println(count);
     }
