@@ -4,22 +4,17 @@ public class Solution {
     public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
         String s=kb.nextLine();
-        String fnl="";
-        try{
-        if(s.length()==1){
-            System.out.println(s);
-        }
-        }catch(Exception e){}
+        StringBuilder sb=new StringBuilder();
         String[] str=s.split("\\+");
-        int[] num=new int[str.length];; 
+        Arrays.sort(str);
         for(int i=0;i<str.length;i++){
-            num[i]=Integer.parseInt(str[i]);
+            sb.append(str[i]);
+            if(i<str.length-1){
+                sb.append("+");
+            }
         }
-        Arrays.sort(num);
-        for(int i=0;i<num.length;i++){
-            fnl=fnl+String.valueOf(num[i]);
-        }
-        System.out.println(fnl);
-        
+        String result=sb.toString();
+        System.out.println(result);
+        kb.close();
     }
 }
