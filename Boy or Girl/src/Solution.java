@@ -4,7 +4,6 @@ public class Solution{
     public static void main(String args[]){
         Scanner kb=new Scanner(System.in);
         String s=kb.nextLine();
-        String str;
         int count=0;
         for(int i=0;i<s.length();i++){
             if(Character.isWhitespace(s.charAt(i))){
