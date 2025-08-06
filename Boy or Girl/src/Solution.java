@@ -6,15 +6,19 @@ public class Solution{
         String s=kb.nextLine();
         String str;
         int count=0;
-        for(int i=0;!s.isBlank();i++){
-            s=s.replaceAll(String.valueOf(s.charAt(i)), "");
-            System.out.println(s);
-            int len=s.length();
-            System.out.println(len);
+        for(int i=0;i<s.length();i++){
+            if(Character.isWhitespace(s.charAt(i))){
+                continue;
+            }
+            s=s.replaceAll(String.valueOf(s.charAt(i)), " ");
             count+=1;
             if(s.isBlank()){
                 break;
             }
-        }System.out.println(count);
+        }if(count%2==0){
+            System.out.println("CHAT WITH HER!");
+        }else{
+            System.out.println("IGNORE HIM!");
+        }
     }
 }
