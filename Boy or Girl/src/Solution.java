@@ -19,5 +19,6 @@ public class Solution{
         }else{
             System.out.println("IGNORE HIM!");
         }
+        kb.close();
     }
 }
