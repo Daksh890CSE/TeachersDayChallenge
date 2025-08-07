@@ -5,6 +5,8 @@ public class Solution {
         Scanner kb=new Scanner(System.in);
         String s=kb.nextLine();
         StringBuilder sb=new StringBuilder(s);
-        String rev=sb.reverse();
+        sb.reverse();
+        String rev=sb.toString();
+        
     }
 }
