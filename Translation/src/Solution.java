@@ -8,7 +8,7 @@ public class Solution {
         StringBuilder sb=new StringBuilder(s);
         sb.reverse();
         String rev=sb.toString();
-        if(rev==s1){
+        if(rev.equalsIgnoreCase(s1)){
             System.out.println("YES");
         }else{
             System.out.println("NO");
