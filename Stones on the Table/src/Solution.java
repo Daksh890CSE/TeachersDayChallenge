@@ -6,14 +6,14 @@ public class Solution {
         int n = kb.nextInt();
         kb.nextLine();
         String s = kb.nextLine();
-        int count=0;
+        n=0;
         for(int i=1;i<s.length();i++){
             if(s.charAt(i-1)==s.charAt(i)){
-                if(count<s.length()-1){
-                    count+=1;
+                if(n<s.length()-1){
+                    n+=1;
                 }
             }
-        }System.out.println(count);
+        }System.out.println(n);
         kb.close();
     }
 }
