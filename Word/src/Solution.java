@@ -12,6 +12,12 @@ public class Solution {
             }else if(Character.isUpperCase(s.charAt(i))){
                 upper+=1;
             }
+        }if(upper>lower){
+            System.out.println(s.toUpperCase());
+        }else if(lower>upper){
+            System.out.println(s.toLowerCase());
+        }else{
+            System.out.println(s.toLowerCase());
         }
     }
 }
