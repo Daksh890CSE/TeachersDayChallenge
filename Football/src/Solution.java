@@ -9,5 +9,6 @@ public class Solution {
         }else{
             System.out.println("NO");
         }
+        kb.close();
     }
 }
