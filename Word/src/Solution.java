@@ -19,5 +19,6 @@ public class Solution {
         }else{
             System.out.println(s.toLowerCase());
         }
+        kb.close();
     }
 }
