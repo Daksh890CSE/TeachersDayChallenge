@@ -26,5 +26,6 @@ public class Solution {
             min+=2-column;
         }
         System.out.println(min);
+        kb.close();
     } 
 }
