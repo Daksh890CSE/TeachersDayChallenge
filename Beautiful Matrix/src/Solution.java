@@ -25,5 +25,6 @@ public class Solution {
         }else{
             min+=2-column;
         }
+        System.out.println(min);
     } 
 }
