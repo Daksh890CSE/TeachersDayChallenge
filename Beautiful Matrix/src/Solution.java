@@ -6,6 +6,7 @@ public class Solution {
         int[] arr=new int[5];
         int row=0;
         int column=0;
+        int min;
         for(int i=0;i<5;i++){
             arr[i]=kb.nextInt();
             if(arr[i]==1){
@@ -15,8 +16,10 @@ public class Solution {
                 row+=1;
                 i=-1;
             }
+        }if(row>=2){
+            min=row-2;
+        }else{
+            min=2-row;
         }
-        System.out.println(row);
-        System.out.println(column);
     } 
 }
