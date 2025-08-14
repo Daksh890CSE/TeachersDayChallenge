@@ -24,7 +24,9 @@ public class Solution {
                 case "X--":
                 x--;
                 break;
-                
+
+                default:
+                break;
             }
         }
         System.out.println(x);
