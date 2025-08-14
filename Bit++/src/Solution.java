@@ -6,28 +6,27 @@ public class Solution {
         int x=0;
         int n=kb.nextInt();
         kb.nextLine();
-        for(int i=0;n<i;i++){
+        for(int i=0;i<n;i++){
             String s=kb.nextLine();
             switch(s){
-                case "++x":
+                case "++X":
                 ++x;
                 break;
 
-                case "x++":
+                case "X++":
                 x++;
                 break;
 
-                case "--x":
+                case "--X":
                 --x;
                 break;
 
-                case "x--":
+                case "X--":
                 x--;
                 break;
-
-                default:
-                break;
+                
             }
         }
+        System.out.println(x);
     }
 }
