@@ -29,6 +29,7 @@ public class Solution {
                 break;
             }
         }
+        kb.close();
         System.out.println(x);
     }
 }
