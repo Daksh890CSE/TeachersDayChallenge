@@ -8,6 +8,26 @@ public class Solution {
         kb.nextLine();
         for(int i=0;n<i;i++){
             String s=kb.nextLine();
+            switch(s){
+                case "++x":
+                ++x;
+                break;
+
+                case "x++":
+                x++;
+                break;
+
+                case "--x":
+                --x;
+                break;
+
+                case "x--":
+                x--;
+                break;
+
+                default:
+                break;
+            }
         }
     }
 }
