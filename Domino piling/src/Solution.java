@@ -7,6 +7,8 @@ public class Solution {
         int n=kb.nextInt();
         kb.close();
         int area=m*n;
-        
+        if(area%2==0){
+            
+        }
     }
 }
