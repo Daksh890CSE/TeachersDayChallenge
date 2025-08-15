@@ -13,9 +13,10 @@ public class Solution {
         }
         kb.close();
         Arrays.sort(arr);
-        for(int i=0,temp=0;temp<(sum/2);i++){
+        for(int i=0,temp=0;temp<=(sum/2);i++){
             temp+=arr[i];
             count+=1;
         }
+        System.out.println(count);
     }
 }
