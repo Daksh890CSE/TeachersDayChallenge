@@ -12,7 +12,6 @@ public class Solution {
             sum+=arr[i];
         }
         kb.close();
-        Arrays.sort(arr);
         for(int i=0,temp=0;temp<=(sum/2);i++){
             temp+=arr[i];
             count+=1;
