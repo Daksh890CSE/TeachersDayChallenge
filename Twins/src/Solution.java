@@ -11,7 +11,10 @@ public class Solution {
             arr[i] = kb.nextInt();
             sum+=arr[i];
         }
+        kb.close();
         Arrays.sort(arr);
-        for(int i=0; )
+        for(int i=0,temp=0;temp<(sum/2);i++){
+
+        }
     }
 }
