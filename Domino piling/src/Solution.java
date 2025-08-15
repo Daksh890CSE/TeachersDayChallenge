@@ -7,8 +7,11 @@ public class Solution {
         int n=kb.nextInt();
         kb.close();
         int area=m*n;
+        int max_domino;
         if(area%2==0){
-            
+            max_domino=area/2;
+        }else{
+            max_domino=area-1/2;
         }
     }
 }
