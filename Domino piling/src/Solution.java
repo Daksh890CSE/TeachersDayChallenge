@@ -11,7 +11,8 @@ public class Solution {
         if(area%2==0){
             max_domino=area/2;
         }else{
-            max_domino=area-1/2;
+            max_domino=(area-1)/2;
         }
+        System.out.println(max_domino);
     }
 }
