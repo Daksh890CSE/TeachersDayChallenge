@@ -12,6 +12,8 @@ public class Solution {
             if(ch[i-1]=='B' && ch[i]=='G'){
                 ch[i-1]='G';
                 ch[i]='B';
+            }if(i%t==0){
+                i++;
             }
         }
         String s=new String(ch);
