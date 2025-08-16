@@ -7,6 +7,9 @@ public class Solution {
         int t=kb.nextInt();
         kb.nextLine();
         String s=kb.nextLine();
-        for(int i=0;i<s.length();i++)
+        kb.close();
+        for(int i=0;i<s.length();i++){
+
+        }
     }
 }
