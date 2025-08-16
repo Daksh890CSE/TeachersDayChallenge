@@ -7,11 +7,13 @@ public class Solution {
         int t=kb.nextInt();
         kb.nextLine();
         String s=kb.nextLine();
-        char[] ch=s.toCharArray();
         kb.close();
         for(int i=1;i<n;i++){
-            if(ch[i-1]=='B' && ch[i]=='G'){
-                char temp=
+            if(s.charAt(i-1)=='B' && s.charAt(i)=='G'){
+                char ch=s.charAt(i-1);
+                s=s.replace(s.charAt(i-1), s.charAt(i));
+                s=s.replace(s.charAt(i),ch);
+
             }
         }System.out.println(s);
     }
