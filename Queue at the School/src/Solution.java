@@ -7,9 +7,12 @@ public class Solution {
         int t=kb.nextInt();
         kb.nextLine();
         String s=kb.nextLine();
+        char[] ch=s.toCharArray();
         kb.close();
-        for(int i=0;i<s.length();i++){
-
-        }
+        for(int i=1;i<n;i++){
+            if(ch[i-1]=='B' && ch[i]=='G'){
+                char temp=
+            }
+        }System.out.println(s);
     }
 }
