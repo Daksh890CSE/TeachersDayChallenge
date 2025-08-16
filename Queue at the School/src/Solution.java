@@ -6,14 +6,15 @@ public class Solution {
         int n=kb.nextInt();
         int t=kb.nextInt();
         kb.nextLine();
-        String s=kb.nextLine();
-        char[] ch=s.toCharArray();
+        char[] ch=kb.nextLine().toCharArray();
         kb.close();
         for(int i=1;i<n;i++){
             if(ch[i-1]=='B' && ch[i]=='G'){
                 ch[i-1]='G';
                 ch[i]='B';
             }
-        }System.out.println(s);
+        }
+        String s=new String(ch);
+        System.out.println(s);
     }
 }
