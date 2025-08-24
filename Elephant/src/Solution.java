@@ -4,7 +4,10 @@ public class Solution {
     public static int minSteps(int x){
         if(x<=5){
             return 1;
-        }else{
+        }else if(x%5==0){
+            return (x/5);
+        }
+        else{
             return (x/5+1);
         }
     }
