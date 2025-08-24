@@ -2,7 +2,9 @@ import java.util.*;
 
 public class Solution {
     public static int minSteps(int x){
-        
+        if(x<5){
+            return 1;
+        }
     }
     public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
