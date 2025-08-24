@@ -5,9 +5,11 @@ public class Solution {
         int cost=0;
         for(int i=1;i<=banana;i++){
             cost+=price*i;
-            System.out.println(cost);
+        }if(cost>money){
+            return cost-money;
+        }else{
+            return 0;
         }
-        return cost-money;
     }
     public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
