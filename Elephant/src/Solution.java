@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Solution {
     public static int minSteps(int x){
-        if(x<5){
+        if(x<=5){
             return 1;
         }else{
             return (x/5+1);
