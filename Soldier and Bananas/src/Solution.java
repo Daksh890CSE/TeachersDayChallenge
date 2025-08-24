@@ -2,10 +2,11 @@ import java.util.*;
 
 public class Solution {
     public static int borrow(int price,int money,int banana){
-        int cost=price;
-        for(int i=1;i<banana;i++){
-            
+        while(banana!=1){
+            price+=price*2;
+            banana--;
         }
+        System.out.println(price);
     }
     public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
