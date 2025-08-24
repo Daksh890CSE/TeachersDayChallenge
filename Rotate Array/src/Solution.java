@@ -6,7 +6,6 @@ class Solution {
         k=k%len;
         int[] rotated=new int[k];
         int[] normal=new int[len-k];
-        int[] rotated_arr=new int[len];
         for(int i=0;i<k;i++){
             rotated[i]=nums[len-k+i];
         }
