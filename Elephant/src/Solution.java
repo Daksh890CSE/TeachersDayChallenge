@@ -6,6 +6,7 @@ public class Solution {
     }
     public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
-        
+        int x=kb.nextInt();
+        minsteps(x);
     }
 }
