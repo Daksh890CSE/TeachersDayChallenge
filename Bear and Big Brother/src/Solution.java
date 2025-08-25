@@ -6,6 +6,10 @@ public class Solution {
         int a=kb.nextInt();
         int b=kb.nextInt();
         int year=0;
-        while(a<b)
+        while(a<b){
+            a+=a*3;
+            b+=b*2;
+            year++;
+        }
     }
 }
