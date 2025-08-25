@@ -5,6 +5,11 @@ public class Solution {
         Scanner kb=new Scanner(System.in);
         long n=kb.nextLong();
         String s=String.valueOf(n);
-        if
+        s.replaceAll("^[47]+$", "");
+        if(s.isEmpty()){
+            System.out.println("YES");
+        }else{
+            System.out.println("NO");
+        }
     }
 }
