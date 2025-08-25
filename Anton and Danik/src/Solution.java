@@ -10,8 +10,17 @@ public class Solution {
         int countA=0;
         int countD=0;
         for(int i=0;i<n;i++){
-            switch case{
-                
+            switch(s.charAt(i)){
+                case 'A':
+                countA++;
+                break;
+
+                case 'D':
+                countD++;
+                break;
+
+                default:
+                break;
             }
         }
     }
