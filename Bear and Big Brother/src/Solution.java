@@ -5,11 +5,13 @@ public class Solution {
         Scanner kb=new Scanner(System.in);
         int a=kb.nextInt();
         int b=kb.nextInt();
+        kb.close();
         int year=0;
         while(a<b){
             a+=a*3;
             b+=b*2;
             year++;
         }
+        System.out.println(year);
     }
 }
