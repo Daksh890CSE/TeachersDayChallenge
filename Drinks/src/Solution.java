@@ -6,8 +6,8 @@ public class Solution {
         int n=kb.nextInt();
         double frac=0;
         for(int i=0;i<n;i++){
-            frac+=kb.nextInt()/100;
+            frac+=kb.nextInt()/100f;
         }
-        System.out.println(frac/n*100);
+        System.out.println(String.format("%.12f",(frac/n*100)));
     }
 }
