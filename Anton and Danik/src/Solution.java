@@ -22,6 +22,12 @@ public class Solution {
                 default:
                 break;
             }
+        }if(countA>countD){
+            System.out.println("Anton");
+        }else if(countA==countD){
+            System.out.println("Friendship");
+        }else{
+            System.out.println("Danik");
         }
     }
 }
