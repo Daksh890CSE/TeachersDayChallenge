@@ -6,10 +6,15 @@ public class Solution {
         int n=kb.nextInt();
         int[] arr=new int[n];
         int count=0;
+        int section;
         for(int i=0;i<n;i++){
             arr[i]=kb.nextInt();
         }
-
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++){
+            section=arr[i];
+            for(int j=0;j<n;j++){
+                
+            }
+        }
     }
 }
