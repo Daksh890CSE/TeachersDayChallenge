@@ -7,9 +7,9 @@ public class Solution {
         int b=kb.nextInt();
         kb.close();
         int year=0;
-        while(a<b){
-            a+=a*3;
-            b+=b*2;
+        while(a<=b){
+            a=a*3;
+            b=b*2;
             year++;
         }
         System.out.println(year);
