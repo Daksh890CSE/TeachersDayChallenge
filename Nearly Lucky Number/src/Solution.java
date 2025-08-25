@@ -6,7 +6,9 @@ public class Solution {
         long n=kb.nextLong();
         String s=String.valueOf(n);
         kb.close();
-        s=s.replaceAll("^[47]+$", "");
+        if(s.contains("4")&&s.contains("7")){
+             s=s.replaceAll("^[47]+$", "");
+        }
         if(s.isEmpty()){
             System.out.println("YES");
         }else{
