@@ -8,10 +8,11 @@ public class Solution {
         kb.close();
         String s3="";
         for(int i=0;i<s1.length();i++){
-            if(s1.charAt(i)==0 && s2.charAt(i)==1){
-
+            if(s1.charAt(i)==0 && s2.charAt(i)==1 || s1.charAt(i)==1 && s2.charAt(i)==0){
+                s3+=1;
+            }else{
+                s3+=0;
             }
-        }
-
+        }System.out.println(s3);
     }
 }
