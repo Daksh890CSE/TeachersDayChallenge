@@ -5,7 +5,9 @@ public class Solution {
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int m = kb.nextInt();
+        
         boolean[] bool = new boolean[50];
+        ArrayList<Integer> iftrue=new ArrayList<Integer>();
         for (int i = 0; i < 50; i++) {
             bool[i] = true;
         }
@@ -16,9 +18,9 @@ public class Solution {
                 }
             }
         }
-        for (int i = 3; i < 50; i++) {
+        for (int i = 2; i < 50; i++) {
             if (bool[i] == true) {
-                System.out.println(i);
+                iftrue.add(i);
             }
         }
     }
