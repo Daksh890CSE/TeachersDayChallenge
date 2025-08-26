@@ -5,9 +5,8 @@ public class Solution {
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int m = kb.nextInt();
-        
         boolean[] bool = new boolean[50];
-        ArrayList<Integer> iftrue=new ArrayList<Integer>();
+        ArrayList<Integer> prime=new ArrayList<Integer>();
         for (int i = 0; i < 50; i++) {
             bool[i] = true;
         }
@@ -20,8 +19,14 @@ public class Solution {
         }
         for (int i = 2; i < 50; i++) {
             if (bool[i] == true) {
-                iftrue.add(i);
+                prime.add(i);
             }
+        }
+        int indexn=prime.indexOf(n);
+        if(prime.get(indexn+1)==m){
+            System.out.println("YES");
+        }else{
+            System.out.println("NO");
         }
     }
 }
