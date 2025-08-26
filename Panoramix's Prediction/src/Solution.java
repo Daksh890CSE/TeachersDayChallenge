@@ -24,9 +24,13 @@ public class Solution {
             }
         }
         int indexn=prime.indexOf(n);
-        if(prime.get(indexn+1)==m){
-            System.out.println("YES");
-        }else{
+        try{
+            if(prime.get(indexn+1)==m ){
+                System.out.println("YES");
+            }else{
+                System.out.println("NO");
+            }
+        }catch(Exception e){
             System.out.println("NO");
         }
     }
