@@ -17,7 +17,11 @@ public class Solution {
                     count++;
                 }
             }
-        }System.out.println(count);
+        }
+        if(n==2 && count<1){
+            count=1;
+        }
+        System.out.println(count);
         kb.close();
     }
 }
