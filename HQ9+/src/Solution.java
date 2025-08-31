@@ -11,8 +11,6 @@ public class Solution {
             System.out.println("YES");
         }else if(s.contains("9")){
             System.out.println("YES");
-        }else if(s.contains("+")){
-            System.out.println("YES");
         }else{
             System.out.println("NO");
         }
