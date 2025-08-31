@@ -20,6 +20,8 @@ public class Solution {
         }
         if(n==2 && count<1){
             count=1;
+        }else if(n==1){
+            count=0;
         }
         System.out.println(count);
         kb.close();
