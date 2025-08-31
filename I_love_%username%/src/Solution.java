@@ -5,9 +5,8 @@ public class Solution {
         Scanner kb=new Scanner(System.in);
         int n = kb.nextInt();
         int[] score=new int[n];
-        int min=10001;
         int max=-1;
-        int count=0;
+        int count=1;
         for(int i=0;i<n;i++){
             score[i]=kb.nextInt();
         }
@@ -18,6 +17,6 @@ public class Solution {
                     count++;
                 }
             }
-        }
+        }System.out.println(count);
     }
 }
