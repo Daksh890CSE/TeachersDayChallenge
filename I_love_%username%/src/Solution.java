@@ -12,7 +12,12 @@ public class Solution {
             score[i]=kb.nextInt();
         }
         for(int i=1;i<n;i++){
-            
+            if(score[i-1]<score[i]){
+                if(max<score[i]){
+                    max=score[i];
+                    count++;
+                }
+            }
         }
     }
 }
