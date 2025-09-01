@@ -13,6 +13,12 @@ public class Solution {
             }else{
                 istrue=false;
             }
+        }if(istrue==true){
+            s=s.toLowerCase();
+            s=s.replaceFirst(String.valueOf(s.charAt(0)), String.valueOf(s.charAt(0)));
+            System.out.println(s);
+        }else{
+            System.out.println(s);
         }
     }
 }
