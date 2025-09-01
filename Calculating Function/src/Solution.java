@@ -13,7 +13,7 @@ public class Solution {
     }
     public static void main(String[] args){
         Scanner kb=new Scanner(System.in);
-        long n=kb.nextInt();
+        long n=kb.nextLong();
         kb.close();
         System.out.println(function(n));
     }
