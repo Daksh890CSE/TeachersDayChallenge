@@ -9,10 +9,11 @@ public class Solution {
         for(int i=0;i<s.length();i++){
             if(Character.isUpperCase(s.charAt(i))){
                 istrue=true;
-            }else if(Character.isLowerCase(0)){
+            }else if(Character.isLowerCase(s.charAt(0)) && i==0){
                 istrue=true;
             }else{
                 istrue=false;
+                break;
             }
         }if(istrue==true){
             s=s.toLowerCase();
