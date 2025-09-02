@@ -8,7 +8,7 @@ public class Solution {
         int y=0;
         int z=0;
         for(int i=0;i<n;i++){
-            for(int j=1;j<4;i++){
+            for(int j=1;j<4;j++){
                 if(j==1){
                     x+=kb.nextInt();
                 }else if(j==2){
