@@ -6,7 +6,8 @@ public class Solution {
         int n = kb.nextInt();
         int[] score=new int[n];
         int max=-1;
-        int count=1;
+        int min=10001;
+        int count=0;
         for(int i=0;i<n;i++){
             score[i]=kb.nextInt();
         }
@@ -15,14 +16,12 @@ public class Solution {
                 if(max<score[i]){
                     max=score[i];
                     count++;
+                }else{
+
                 }
             }
         }
-        if(n==2 && count<1){
-            count=1;
-        }else if(n==1){
-            count=0;
-        }
+        
         System.out.println(count);
         kb.close();
     }
