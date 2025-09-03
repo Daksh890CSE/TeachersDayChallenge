@@ -9,6 +9,7 @@ public class Solution {
         for(int i=0;i<n;i++){
             present[i]=kb.nextInt();
         }
+        kb.close();
         for(int i=0;i<n;i++){
             fnl[present[i]-1]=i+1;
         }
