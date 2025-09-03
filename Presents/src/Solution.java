@@ -13,6 +13,8 @@ public class Solution {
         for(int i=0;i<n;i++){
             fnl[present[i]-1]=i+1;
         }
-        System.out.println(Arrays.toString(fnl));
+        for(int i=0;i<n;i++){
+            System.out.print(fnl[i]+" ");
+        }
     }
 }
