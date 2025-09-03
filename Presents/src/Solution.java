@@ -10,7 +10,8 @@ public class Solution {
             present[i]=kb.nextInt();
         }
         for(int i=0;i<n;i++){
-            fnl[present[i]-1]=present[i]-1;
+            fnl[present[i]-1]=i+1;
         }
+        System.out.println(Arrays.toString(fnl));
     }
 }
