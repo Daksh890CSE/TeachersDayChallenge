@@ -6,14 +6,11 @@ public class Solution {
         int n = kb.nextInt();
         int[] arr = new int[n];
         int max_count = -1;
-        int curr;
-
         for (int i = 0; i < n; i++) {
             arr[i] = kb.nextInt();
         }
         kb.close();
         for (int i = 0; i < n; i++) {
-            curr = arr[i];
             int min = 1001;
             int count = 0;
             for (int j = i+1; j < n; j++) {
