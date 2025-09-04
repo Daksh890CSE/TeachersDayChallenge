@@ -8,7 +8,7 @@ public class Solution {
         for(int i=0;i<n;i++){
             int people=kb.nextInt();
             int space=kb.nextInt();
-            if(space-people>2){
+            if(space-people>=2){
                 count++;
             }
         }
