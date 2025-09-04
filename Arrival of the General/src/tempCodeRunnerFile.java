@@ -7,11 +7,10 @@ public class Solution {
         int[] arr = new int[n];
         int min_index = 0;
         int max_index = 0;
-        int count;
+        int swap;
         for (int i = 0; i < n; i++) {
             arr[i] = kb.nextInt();
         }
-        kb.close();
         int max = arr[0];
         int min = arr[0];
         for (int i = 1; i < n; i++) {
@@ -23,10 +22,10 @@ public class Solution {
                 max_index = i;
             }
         }
-        count=max_index+(n-1-min_index);
+        swap=max_index+(n-1-min_index);
         if(max_index>min_index){
-            count--;
+            swap--;
         }
-        System.out.println(count);
+        System.out.println(swap);
     }
 }
