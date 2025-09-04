@@ -13,7 +13,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             int min = 1001;
             int count = 0;
-            for (int j = i+1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
                 if (arr[j] <= min) {
                     min = arr[j];
                     count++;
@@ -23,7 +23,9 @@ public class Solution {
                 } else {
                     break;
                 }
-            }for(int k=i;k>=0;k--){
+            }
+            min = 1001;
+            for (int k = i; k >= 0; k--) {
                 if (arr[k] <= min) {
                     min = arr[k];
                     count++;
