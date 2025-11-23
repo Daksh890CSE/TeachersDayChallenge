@@ -22,6 +22,5 @@ class Solution {
         int[] nums={1,2,3,4,5,6,7};
         obj.rotate(nums,k);
         System.out.println(Arrays.toString(nums));
-        System.out.println(dewd);
     }
 }
